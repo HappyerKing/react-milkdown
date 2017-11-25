@@ -7,7 +7,7 @@ import Cm from './Cm';
 import Medium from './Medium';
 import Control from './Control';
 
-import 'font-awesome/css/font-awesome.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
 
 import './App.css';
 
