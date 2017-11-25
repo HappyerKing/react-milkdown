@@ -1,0 +1,39 @@
+.milk-medium {
+  position: absolute;
+  z-index: 9;
+  display: inline-block;
+  background-color: #242424;
+  background: linear-gradient(to bottom, #242424, rgba(36, 36, 36, 0.75));
+  border: 1px solid #000;
+  border-radius: 9px;
+  box-shadow: 0 0 3px #000;
+}
+
+.milk-medium > button {
+  position: relative;
+  padding: 4px 10px 4px 10px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #242424;
+  background: linear-gradient(to bottom, #242424, rgba(36, 36, 36, 0.89));
+  border: 0;
+  border-right: 1px solid #000;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  vertical-align: bottom;
+  line-height: 28px;
+  color: #fff;
+  outline: none;
+}
+
+.milk-medium > button:hover {
+  color: yellow;
+}
+
+.milk-medium span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
