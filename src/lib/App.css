@@ -24,6 +24,8 @@
 .milk-preview {
   padding-left: 30px;
   box-sizing: border-box;
+  background: #fff;
+  z-index: 2;
 }
 
 .milk-editor-main {
