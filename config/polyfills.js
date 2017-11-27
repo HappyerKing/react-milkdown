@@ -14,3 +14,29 @@ require('whatwg-fetch');
 // Object.assign() is commonly used with React.
 // It will use the native implementation if it's present and isn't buggy.
 Object.assign = require('object-assign');
+
+
+// for code mirror
+global.Range = function Range() {};
+
+const createContextualFragment = (html) => {
+  const div = document.createElement('div');
+  div.innerHTML = html;
+  return div.children[0]; // so hokey it's not even funny
+};
+
+Range.prototype.createContextualFragment = (html) => createContextualFragment(html);
+
+// HACK: Polyfil that allows codemirror to render in a JSDOM env.
+global.window.document.createRange = function createRange() {
+  return {
+    setEnd: () => {},
+    setStart: () => {},
+    getBoundingClientRect: () => {
+      return { right: 0 };
+    },
+    getClientRects: () => [],
+    createContextualFragment,
+  };
+};
+

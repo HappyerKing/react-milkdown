@@ -7,8 +7,6 @@ import Cm from './Cm';
 import Medium from './Medium';
 import Control from './Control';
 
-// import 'font-awesome/css/font-awesome.min.css';
-
 import './Milk.scss';
 
 const readFileDeco = curry((fn, target) => { target.readFile = fn });
@@ -16,7 +14,7 @@ const readFileDeco = curry((fn, target) => { target.readFile = fn });
 class Milk extends Component {
 
   state = {
-    input: '',
+    input: this.props.value,
     accept: 'image/*',
     files: [],
     dropzoneActive: false,
@@ -57,11 +55,11 @@ class Milk extends Component {
     if (this.state.pasteMode) {
       this.setState({
         pasteMode: false,
-        input: value.replace(/\n/g, '  \n')
+        input: this.props.onChange(value.replace(/\n/g, '  \n'))
       });
     } else {
       this.setState({
-        input: value,
+        input: this.props.onChange(value),
       });
     }
   }
@@ -247,7 +245,10 @@ class Milk extends Component {
           onDragLeave={this.onDragLeave}
           onMouseUp={this.onMouseUp}
         >
-          { dropzoneActive && <div className="milk-full-dropzone" /> }
+          {
+            dropzoneActive &&
+              <div className="milk-full-dropzone" />
+          }
           <Cm
             value={input}
             onCursor={this.onCursor}
