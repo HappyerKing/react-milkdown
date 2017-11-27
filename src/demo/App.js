@@ -1,27 +1,31 @@
-import React, { Component } from 'react';
-import Example from '../lib';
-// import { SecondExample } from '../lib';
+import React from 'react';
+import Example from '../lib/components/Example';
+import SecondExample from '../lib/components/SecondExample';
 
 
-export default class App extends Component {
-  state = {
-    value: ""
-  }
-
-  onChange = value => {
-    this.setState({ value });
-    return value;
-  }
-
-  render() {
-    const { value } = this.state
-    return (
-      <div>
-        <Example
-          value={value}
-          onChange={this.onChange}
-        />
-      </div>
-    )
-  }
-}
+export default () => (
+  <div>
+    <h1 className="Example-text">React Milkdown</h1>
+    <Example />
+    <SecondExample />
+    <div className="SecondExample">
+      <p className="SecondExample-text">
+        Based on Facebook's {'\u00A0'}
+        <a
+          className="SecondExample-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/facebookincubator/create-react-app"
+        >
+          Create react app
+        </a>
+      </p>
+      <a
+        className="SecondExample-github-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/Rubbby/create-react-library"
+      > Documentation </a>
+    </div>
+  </div>
+)

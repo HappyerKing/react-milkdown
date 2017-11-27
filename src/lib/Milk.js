@@ -9,9 +9,9 @@ import Control from './Control';
 
 import './Milk.scss';
 
-const readFileDeco = curry((fn, target) => { target.readFile = fn });
+export const readFileDeco = curry((fn, target) => { target.readFile = fn });
 
-class Milk extends Component {
+export default class Milk extends Component {
 
   state = {
     input: this.props.value,
@@ -229,10 +229,8 @@ class Milk extends Component {
         <Dropzone
           style={
             fullScreen
-              ? { position: 'absolute', top: 0, bottom: 0, left: 0, width: '50%' }
-              : preview
-                ? { display: 'none' }
-                : { display: 'block' }
+              ? { position: 'absolute', top: 0, bottom: 0, left: 0, width: '50%', zIndex: 1 }
+              : preview ? { height: 0 } : {}
           }
           className="milk-dropzone"
           disableClick={true}
@@ -278,10 +276,3 @@ class Milk extends Component {
     );
   }
 };
-
-export default Milk;
-
-export const milkFileReader = fn => (
-  @readFileDeco(fn)
-  class extends Milk {}
-);

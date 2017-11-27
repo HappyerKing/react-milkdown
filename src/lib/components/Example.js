@@ -1,10 +1,35 @@
-import React from 'react';
-import './Example.scss';
+import React, { Component } from 'react';
+import Milk from '../';
+import './SecondExample.scss';
 
-const Example = () => (
-  <div className="Example">
-    <h1 className="Example-text">Create React Libraries</h1>
-  </div>
-);
+export default class Example extends Component {
+  state = {
+    value: ""
+  }
 
-export default Example;
+  onChange = value => {
+    this.setState({ value });
+    return value;
+  }
+
+  render() {
+    const { value } = this.state
+    return (
+      <div className="SecondExample">
+        <div className="SecondExample-text">
+          <a
+            className="SecondExample-github-link"
+            href="#default"
+          >
+            Default Use
+          </a>
+          <Milk
+            value={value}
+            onChange={this.onChange}
+            style={{margin: "0 auto"}}
+          />
+        </div>
+      </div>
+    )
+  }
+}

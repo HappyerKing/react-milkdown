@@ -4,6 +4,7 @@ $github-color: #3079ab;
 .SecondExample {
   text-align: center;
   width: 100%;
+  padding: 40px 0;
 }
 
 .SecondExample-text {
@@ -24,6 +25,8 @@ $github-color: #3079ab;
   color: $github-color;
   font-size: 22px;
   text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
 
   &:hover {
     border-bottom: 1px solid $github-color;

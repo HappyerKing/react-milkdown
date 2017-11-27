@@ -13,7 +13,6 @@
 
 .milk-full-dropzone {
   position: absolute;
-  z-index: 100;
   top: 0;
   right: 0;
   bottom: 0;
@@ -24,6 +23,7 @@
 
 .milk-dropzone {
   position: relative;
+  z-index: 0;
 }
 
 .milk-preview {
