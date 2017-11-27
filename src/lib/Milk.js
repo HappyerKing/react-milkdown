@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
-import { merge, curry, not, reduce, map } from 'ramda';
+import { curry, not, reduce, map } from 'ramda';
 
 import marked from './mark';
 import Cm from './Cm';
@@ -52,6 +52,7 @@ class Milk extends Component {
   }
 
   onChange = (editor, data, value) => {
+    console.log(editor.getValue())
     if (this.state.pasteMode) {
       this.setState({
         pasteMode: false,
@@ -196,11 +197,7 @@ class Milk extends Component {
     return (
       <div
         className="milk"
-        style={
-          !fullScreen
-            ? merge(style, { position: 'absolute' })
-            : {style}
-        }
+        style={style}
       >
         { mediumDisplay && <Medium
           top={clientY + 10}
@@ -256,6 +253,12 @@ class Milk extends Component {
             onChange={this.onChange}
             onDragEnter={this.cmDragEnter}
           />
+          <Control
+            onFullScreen={this.onFullScreen}
+            onPreview={this.onPreview}
+            onPasteModeChange={this.onPasteModeChange}
+            pasteMode={pasteMode}
+          />
         </Dropzone>
         {
           (preview || fullScreen) &&
@@ -271,12 +274,6 @@ class Milk extends Component {
             } : {}}
           />
         }
-        <Control
-          onFullScreen={this.onFullScreen}
-          onPreview={this.onPreview}
-          onPasteModeChange={this.onPasteModeChange}
-          pasteMode={pasteMode}
-        />
       </div>
     );
   }

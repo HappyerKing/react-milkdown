@@ -17,7 +17,7 @@ const Rdo = ({value, name, checked, onChange, icon}) => (
       checked={checked}
       onChange={onChange}
     />
-    <label className={icon} />
+    <label className={ icon } />
   </div>
 );
 
