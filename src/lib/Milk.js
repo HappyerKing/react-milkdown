@@ -229,7 +229,7 @@ export default class Milk extends Component {
         <Dropzone
           style={
             fullScreen
-              ? { position: 'absolute', top: 0, bottom: 0, left: 0, width: '50%', zIndex: 1 }
+              ? { position: 'fixed', top: 0, bottom: 0, left: 0, width: '50%', zIndex: 1 }
               : preview ? { height: 0 } : {}
           }
           className="milk-dropzone"
@@ -264,7 +264,7 @@ export default class Milk extends Component {
             className="milk-preview"
             dangerouslySetInnerHTML={{__html: marked(input)}}
             style={fullScreen ? {
-              position: 'absolute',
+              position: 'fixed',
               top: 0,
               right: 0,
               bottom: 0,

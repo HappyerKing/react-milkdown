@@ -2,9 +2,35 @@ import React, { Component } from 'react';
 import Milk from '../';
 import './SecondExample.scss';
 
-export default class Example extends Component {
+const examStr = `\`\`\`javascript
+import Milk from 'react-milkdown';
+
+class Milkdown extends Component {
   state = {
     value: ""
+  }
+
+  onChange = value => {
+    this.setState({ value });
+    return value;
+  }
+
+  render() {
+    const { value } = this.state
+    return (
+      <Milk
+        value={value}
+        onChange={this.onChange}
+        style={{margin: "0 auto"}}
+      />
+    )
+  }
+}
+\`\`\``
+
+export default class Example extends Component {
+  state = {
+    value: examStr
   }
 
   onChange = value => {
