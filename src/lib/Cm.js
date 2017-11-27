@@ -4,6 +4,8 @@ import { Controlled as CodeMirror } from 'react-codemirror2'
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/base16-light.css';
 
+import './Cm.scss';
+
 require('codemirror/mode/markdown/markdown');
 require('codemirror/mode/javascript/javascript');
 

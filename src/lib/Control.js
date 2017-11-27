@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Control.css';
+import './Control.scss';
 
 const Btn = ({ icon, click }) => (
   <div>
@@ -23,27 +23,34 @@ const Rdo = ({value, name, checked, onChange, icon}) => (
 
 export default ({ onFullScreen, onPreview, onPasteModeChange, pasteMode }) => (
   <div className="milk-buttons">
-    <Btn
-      icon="fa fa-expand"
-      click={ onFullScreen }
-    />
-    <Btn
-      icon="fa fa-eye"
-      click={ onPreview }
-    />
-    <Rdo
-      value="normal"
-      name="type"
-      checked={pasteMode === false}
-      onChange={onPasteModeChange}
-      icon="fa fa-file-text"
-    />
-    <Rdo
-      value="paste"
-      name="type"
-      checked={pasteMode === true}
-      onChange={onPasteModeChange}
-      icon="fa fa-paste"
-    />
+    <div className="milk-buttons-container">
+      <div className="milk-buttons-slide">
+        <Btn
+          icon="fa fa-expand"
+          click={ onFullScreen }
+        />
+        <Btn
+          icon="fa fa-eye"
+          click={ onPreview }
+        />
+        <Rdo
+          value="normal"
+          name="type"
+          checked={pasteMode === false}
+          onChange={onPasteModeChange}
+          icon="fa fa-file-text"
+        />
+        <Rdo
+          value="paste"
+          name="type"
+          checked={pasteMode === true}
+          onChange={onPasteModeChange}
+          icon="fa fa-paste"
+        />
+      </div>
+      <div className="milk-buttons-drag">
+        <div className="fa fa-arrow-down" />
+      </div>
+    </div>
   </div>
 );

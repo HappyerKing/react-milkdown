@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Medium.css';
+import './Medium.scss';
 
 export default ({ top, left, options }) => (
   <div className="milk-medium" style={{top, left}}>
