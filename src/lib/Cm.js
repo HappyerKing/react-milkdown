@@ -13,7 +13,7 @@ const preventCM = (editor, event) => {
   event.preventDefault();
 }
 
-export default (props) => (
+export default props => (
   <CodeMirror
     className="milk-editor-main"
     {...props}
