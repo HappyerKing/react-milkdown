@@ -5,7 +5,7 @@
 [点击这里查看demo](https://saul-mirone.github.io/react-milkdown/)
 
 <div align="center">
-   <img src="https://github.com/Saul-Mirone/react-milkdown/blob/master/logo.svg" width="400px" height="200px" />
+   <img src="http://oanr6klwj.bkt.clouddn.com/milkdown/logo.svg" width="400px" height="200px" />
 </div>
 
 ------
