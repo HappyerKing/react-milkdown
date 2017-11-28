@@ -9,7 +9,7 @@ import Control from './Control';
 
 import './Milk.scss';
 
-export const readFileDeco = curry((fn, target) => { target.readFile = fn });
+const readFileDeco = curry((fn, target) => { target.readFile = fn; });
 
 export default class Milk extends Component {
 
@@ -43,6 +43,7 @@ export default class Milk extends Component {
   static async readMultiFiles(files) {
     return await reduce(async (t, f) => {
       const acc = await t;
+      console.log(this.prototype);
       const result = await this
         .prototype
         .constructor
@@ -52,11 +53,15 @@ export default class Milk extends Component {
   }
 
   onChange = (editor, data, value) => {
-    console.log(editor.getValue())
+    if (!editor.getDoc().somethingSelected()) {
+      this.setState({
+        mediumDisplay: false
+      });
+    }
     if (this.state.pasteMode) {
       this.setState({
-        pasteMode: false,
-        input: this.props.onChange(value.replace(/\n/g, '  \n'))
+        input: this.props.onChange(value.replace(/\n/g, '  \n')),
+        pasteMode: false
       });
     } else {
       this.setState({
@@ -146,7 +151,7 @@ export default class Milk extends Component {
 
   onPasteModeChange = e => {
     this.setState({
-      pasteMode: e.target.value === 'paste' ? true : false
+      pasteMode: e.target.value === 'paste'
     });
   }
 
@@ -276,3 +281,8 @@ export default class Milk extends Component {
     );
   }
 };
+
+export const milkFileReader = fn => (
+  @readFileDeco(fn)
+  class extends Milk {}
+);

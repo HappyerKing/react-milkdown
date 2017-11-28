@@ -1,1 +1,1 @@
-export {default, readFileDeco} from './Milk';
+export {default, milkFileReader} from './Milk';

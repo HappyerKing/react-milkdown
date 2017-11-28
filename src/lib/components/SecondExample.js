@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Milk, { readFileDeco } from '../';
+import { milkFileReader } from '../';
 import './Example.scss';
 
 const examStr = `\`\`\`javascript
-import Milk, { readFileDeco } from 'react-milkdown';
+import { milkFileReader } from 'react-milkdown';
 
 const blobReader = file => (
   new Promise((res, rej) => {
@@ -16,7 +16,8 @@ const blobReader = file => (
   })
 );
 
-@readFileDeco(blobReader)
+const Milk = milkFileReader(blobReader);
+
 class Milkdown extends Component {
   state = {
     value: ""
@@ -51,7 +52,8 @@ const blobReader = file => (
   })
 );
 
-@readFileDeco(blobReader)
+const Milk = milkFileReader(blobReader);
+
 export default class SecondExample extends Component {
   state = {
     value: examStr

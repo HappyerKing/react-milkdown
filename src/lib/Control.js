@@ -13,7 +13,6 @@ const Rdo = ({value, name, checked, onChange, icon}) => (
     <input
       type="radio"
       value={value}
-      name={name}
       checked={checked}
       onChange={onChange}
     />
@@ -35,15 +34,15 @@ export default ({ onFullScreen, onPreview, onPasteModeChange, pasteMode }) => (
         />
         <Rdo
           value="normal"
-          name="type"
-          checked={pasteMode === false}
+          name="mode"
+          checked={!pasteMode}
           onChange={onPasteModeChange}
           icon="fa fa-file-text"
         />
         <Rdo
           value="paste"
-          name="type"
-          checked={pasteMode === true}
+          name="mode"
+          checked={pasteMode}
           onChange={onPasteModeChange}
           icon="fa fa-paste"
         />
