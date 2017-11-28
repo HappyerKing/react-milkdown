@@ -19,7 +19,7 @@
     "deploy": "gh-pages -d demo",
     "prepublish": "npm run build",
     "demo": "node scripts/demo.js",
-    "test": "node scripts/test.js --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill"
+    "test": "node scripts/test.js --env=jsdom --setupTestFrameworkScriptFile=raf/polyfill --coverage"
   },
   "author": "mirone",
   "license": "MIT",
