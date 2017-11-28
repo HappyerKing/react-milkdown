@@ -43,7 +43,6 @@ export default class Milk extends Component {
   static async readMultiFiles(files) {
     return await reduce(async (t, f) => {
       const acc = await t;
-      console.log(this.prototype);
       const result = await this
         .prototype
         .constructor
