@@ -2,7 +2,7 @@
 
 Powerfull Markdown editor as React components.
 
-[Check live demo here!]()
+[Check live demo here!](https://saul-mirone.github.io/react-milkdown/)
 
 [查看中文说明](https://github.com/Saul-Mirone/react-milkdown/blob/master/README_CN.md)
 

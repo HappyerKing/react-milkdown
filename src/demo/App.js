@@ -10,21 +10,30 @@ export default () => (
     <SecondExample />
     <div className="SecondExample">
       <p className="SecondExample-text">
-        Based on Facebook's {'\u00A0'}
+        Based on
         <a
           className="SecondExample-link"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/facebookincubator/create-react-app"
+          href="https://codemirror.net/"
         >
-          Create react app
+          CodeMirror
+        </a>
+        and
+        <a
+          className="SecondExample-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://react-dropzone.js.org/"
+        >
+          react-dropzone
         </a>
       </p>
       <a
         className="SecondExample-github-link"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://github.com/Rubbby/create-react-library"
+        href="https://github.com/Saul-Mirone/react-milkdown"
       > Documentation </a>
     </div>
   </div>

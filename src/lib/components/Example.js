@@ -47,7 +47,7 @@ export default class Example extends Component {
         <div className="SecondExample-text">
           <a
             className="SecondExample-github-link"
-            href="#default"
+            href="https://github.com/Saul-Mirone/react-milkdown/blob/master/src/lib/components/Example.js"
           >
             Default Use
           </a>

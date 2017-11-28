@@ -71,7 +71,7 @@ export default class SecondExample extends Component {
     return (
       <div className="SecondExample">
         <div className="SecondExample-text">
-          <a className="SecondExample-github-link" href="#default" >
+          <a className="SecondExample-github-link" href="https://github.com/Saul-Mirone/react-milkdown/blob/master/src/lib/components/SecondExample.js" >
             File Decorator Use
           </a>
           <Milk

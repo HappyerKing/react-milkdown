@@ -2,7 +2,7 @@
 
 强大的React Markdown编辑器！
 
-[点击这里查看demo]()
+[点击这里查看demo](https://saul-mirone.github.io/react-milkdown/)
 
 ![logo](./logo-mini.svg)
 
