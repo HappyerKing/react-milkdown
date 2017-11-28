@@ -1,23 +1,21 @@
 # react-milkdown
 
-Powerfull Markdown editor as React components.
+强大的React Markdown编辑器！
 
-[Check live demo here!]()
-
-[查看中文说明](https://github.com/Saul-Mirone/react-milkdown/blob/master/README_CN.md)
+[点击这里查看demo]()
 
 ![logo](./logo-mini.svg)
 
-***
+------
 
-# Installing
+# 安装
 
 ```shell
 npm install --save react-milkdown
 yarn add react-milkdown
 ```
 
-# Basic usage
+# 基本使用
 
 ```jsx
 import React, { Component } from 'react';
@@ -46,24 +44,27 @@ class Milkdown extends Component {
 }
 ```
 
-- [x] Highlight 
-- [x] Multi-line edit
-- [x] Drag Upload Image(support multiple image)
-- [x] Medium editor style control bar
-- [x] Preview
-- [x] Full screen edit
-- [x] Paste mode (auto convert newline when paste)
+# 特性
+
+- [x] 高亮
+- [x] 多行编辑
+- [x] 图片拖拽上传（支持多图）
+- [x] Medium风格的辅助条
+- [x] 预览
+- [x] 全屏编辑
+- [x] 粘贴模式（自动转换换行符）
 
 # Props
-* `value`: the context of editor
-* `onChange`: the only argument of onChange is **value**. **IMPORTANT!!!** at the end of this function, you **MUST** `return value`
-* `style`: change the style of milkdown's container
+
+- `value`: milkdown编辑器的value
+- `onChange`: 唯一的参数是**value**. **重要!!!** 在onChange函数的末尾 **必须** `return value`
+- `style`: 改变milkdown编辑器的样式
 
 
 
-# Decorator
+# 装饰器
 
-Milkdown provide a function (essentially is a decorator) to let you change method of upload file (change to base64 by default), you can use it like this:
+Milkdown 提供了一个方法（本质上是一个装饰器）来让你改变上传图片的方法 （默认是转换为base64），你可以这样使用：
 
 ```jsx
 import { milkFileReader } from 'react-milkdown';
@@ -106,4 +107,4 @@ class Milkdown extends Component {
 
 # License
 
-MIT-licensed. See [LICENSE](https://github.com/Saul-Mirone/react-milkdown/blob/master/LICENSE).
+MIT-licensed. 查看 [LICENSE](https://github.com/Saul-Mirone/react-milkdown/blob/master/LICENSE).
