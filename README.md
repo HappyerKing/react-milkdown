@@ -1,4 +1,4 @@
-# react-milkdown &middot; ![Travis](https://travis-ci.org/Saul-Mirone/react-milkdown.svg?branch=master)
+# react-milkdown &middot; ![Travis](https://travis-ci.org/Saul-Mirone/react-milkdown.svg?branch=master) ![npm version](https://badge.fury.io/js/react-milkdown.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 Powerful Markdown editor as React components.
 
