@@ -1,10 +1,10 @@
-# react-milkdown
+# react-milkdown &middot; ![Travis](https://travis-ci.org/Saul-Mirone/react-milkdown.svg?branch=master)
 
 强大的React Markdown编辑器！
 
 [点击这里查看demo](https://saul-mirone.github.io/react-milkdown/)
 
-![logo](./logo-mini.svg)
+<div align="center">![logo](./logo-mini.svg)</div>
 
 ------
 

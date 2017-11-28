@@ -1,4 +1,4 @@
-# react-milkdown
+# react-milkdown &middot; ![Travis](https://travis-ci.org/Saul-Mirone/react-milkdown.svg?branch=master)
 
 Powerful Markdown editor as React components.
 
@@ -6,7 +6,7 @@ Powerful Markdown editor as React components.
 
 [查看中文说明](https://github.com/Saul-Mirone/react-milkdown/blob/master/README_CN.md)
 
-![logo](./logo-mini.svg)
+<div align="center">![logo](./logo-mini.svg)</div>
 
 ***
 
