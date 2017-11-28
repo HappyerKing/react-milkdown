@@ -6,7 +6,7 @@ Powerful Markdown editor as React components.
 
 [查看中文说明](https://github.com/Saul-Mirone/react-milkdown/blob/master/README_CN.md)
 
-<center>![logo](./logo-mini.svg)</center>
+![logo](./logo-mini.svg)
 
 ***
 
