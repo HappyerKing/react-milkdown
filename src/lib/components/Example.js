@@ -5,6 +5,8 @@ import './SecondExample.scss';
 const examStr = `\`\`\`javascript
 import Milk from 'react-milkdown';
 
+import 'font-awesome/css/font-awesome.min.css'; // milkdown uses font-awesome, you can ignore this if your project already import font-awesome
+
 class Milkdown extends Component {
   state = {
     value: ""

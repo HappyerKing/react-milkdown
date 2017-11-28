@@ -23,6 +23,8 @@ yarn add react-milkdown
 import React, { Component } from 'react';
 import Milk from 'react-milkdown';
 
+import 'font-awesome/css/font-awesome.min.css'; // milkdown uses font-awesome, you can ignore this if your project already import font-awesome
+
 class Milkdown extends Component {
   state = {
     value: ""
@@ -66,7 +68,10 @@ class Milkdown extends Component {
 Milkdown provide a function (essentially is a decorator) to let you change method of upload file (change to base64 by default), you can use it like this:
 
 ```jsx
+import React, { Component } from 'react';
 import { milkFileReader } from 'react-milkdown';
+
+import 'font-awesome/css/font-awesome.min.css'; // milkdown uses font-awesome, you can ignore this if your project already import font-awesome
 
 const blobReader = file => (
   new Promise((res, rej) => {

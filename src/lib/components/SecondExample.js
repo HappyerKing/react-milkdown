@@ -5,6 +5,8 @@ import './Example.scss';
 const examStr = `\`\`\`javascript
 import { milkFileReader } from 'react-milkdown';
 
+import 'font-awesome/css/font-awesome.min.css'; // milkdown uses font-awesome, you can ignore this if your project already import font-awesome
+
 const blobReader = file => (
   new Promise((res, rej) => {
     const reader = new FileReader();
