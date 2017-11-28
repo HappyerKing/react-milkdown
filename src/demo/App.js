@@ -10,23 +10,23 @@ export default () => (
     <SecondExample />
     <div className="SecondExample">
       <p className="SecondExample-text">
-        Based on
+        Based on&nbsp; 
         <a
           className="SecondExample-link"
           target="_blank"
           rel="noopener noreferrer"
           href="https://codemirror.net/"
         >
-          CodeMirror
+          [CodeMirror]
         </a>
-        and
+          &nbsp;and&nbsp;
         <a
           className="SecondExample-link"
           target="_blank"
           rel="noopener noreferrer"
           href="https://react-dropzone.js.org/"
         >
-          react-dropzone
+          [react-dropzone]
         </a>
       </p>
       <a
