@@ -4,7 +4,7 @@
 
 [点击这里查看demo](https://saul-mirone.github.io/react-milkdown/)
 
-![logo](./logo-mini.svg)
+<center>![logo](./logo-mini.svg)</center>
 
 ------
 

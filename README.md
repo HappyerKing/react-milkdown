@@ -1,12 +1,12 @@
 # react-milkdown
 
-Powerfull Markdown editor as React components.
+Powerful Markdown editor as React components.
 
 [Check live demo here!](https://saul-mirone.github.io/react-milkdown/)
 
 [查看中文说明](https://github.com/Saul-Mirone/react-milkdown/blob/master/README_CN.md)
 
-![logo](./logo-mini.svg)
+<center>![logo](./logo-mini.svg)</center>
 
 ***
 
