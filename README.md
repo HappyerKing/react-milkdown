@@ -48,6 +48,8 @@ class Milkdown extends Component {
 }
 ```
 
+# Features
+
 - [x] Highlight 
 - [x] Multi-line edit
 - [x] Drag Upload Image(support multiple image)
