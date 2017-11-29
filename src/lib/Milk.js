@@ -136,6 +136,12 @@ export default class Milk extends Component {
     }
   }
 
+  onBlur = () => {
+    this.setState({
+      mediumDisplay: false
+    });
+  }
+
   onPreview = () => {
     this.setState({
       preview: not(this.state.preview)
@@ -250,6 +256,7 @@ export default class Milk extends Component {
           }
           <Cm
             value={input}
+            onBlur={this.onBlur}
             onCursor={this.onCursor}
             onBeforeChange={this.onBeforeChange}
             onChange={this.onChange}
